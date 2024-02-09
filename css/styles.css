@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    min-height: 100vh;
+    background: #F9FAFB;
+    color: #121826;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E5E7EB;
+    text-align: center;
+
+}
+
+/*Starting CSS personal code*/
+.header{
+    display: contents;
+}
+
+ .headerMenu{ 
+     margin-top: 20px;
+    margin-bottom: 5px;
+} 
+.modeButton{
+    margin-top: 15px;
+    margin-right: 70px;
+}
+.darkButton{
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border:1px solid #E5E7EB;
+    border-radius: 10px;
+}
+.bodyCard{
+    margin-top: 130px;
+}
+.card{
+    width: 600px;
+    height: 350px;
+    background-color: #FFFFFF;
+    border-radius: 2%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.decoration {
+    width: 580px;
+    height: 330px;
+    border: 1px dashed #E5E7EB;
+    margin: 0 auto;
+    border-radius: 2%;
+  }
+  .customInput{
+    margin-top: 20%;
+    margin-left: 47%;
+  }
+  #inputStyle{
+      display: none;
+  }
+  .textCustom{
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Inter-Light', sans-serif;
+      font-size: medium;
+  }
+  .auxText{
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+  }
+  #mediaButtons{
+      display: none;
+      text-align: center;
+      margin-top: 50px;
+  }
+  #share{
+      background-color: #3662E3;
+      color: #F9FAFB;
+      border: 1px solid #3662E3;
+      height: 35px;
+      border-radius: 10%;
+      font-size: small;
+      font-weight: lighter;
+  }
+/*Ending CSS personal code*/
+
+.get-started {
+    padding: 1rem 2rem;
+    border: 0.5px solid #1e293b;
+    background-color: #94a3b817;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    background: url('../images/blur-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -130px;
+    right: -75px;
+    width: 500px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.logo {
+    display: none;
+}
+
+
+.link-card {
+    padding: 1rem;
+    border: 0.5px solid transparent;
+    transition: all ease-in-out 50ms;
+    cursor: pointer;
+}
+
+.link-card:hover {
+    border: 0.5px solid #1e293b;
+    background-color: #94a3b817;
+    border-radius: 8px;
+}
+
+.link-title {
+    font-size: 1.125rem;
+}
+
+.link-description {
+    font-size: 0.875rem;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    color: #94a3b8;
+}
+
+@media screen and (min-width: 720px) {
+    .logo {
+        display: initial;
+    }
+
+    .get-started {
+        width: auto;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+  }
